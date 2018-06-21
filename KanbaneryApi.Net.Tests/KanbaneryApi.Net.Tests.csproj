@@ -7,10 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
-    <PackageReference Include="xunit" Version="2.3.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <None Remove="ApiResponses\api_v1_projects_123_users.json" />
+    <None Remove="ApiResponses\api_v1_user.json" />
+    <None Remove="ApiResponses\api_v1_user_workspaces.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
+    <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ApiResponses\api_v1_projects_123_users.json" />
+    <EmbeddedResource Include="ApiResponses\api_v1_user_workspaces.json" />
+    <EmbeddedResource Include="ApiResponses\api_v1_user.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KanbaneryApi.Net\KanbaneryApi.Net.csproj" />
   </ItemGroup>
 
 </Project>

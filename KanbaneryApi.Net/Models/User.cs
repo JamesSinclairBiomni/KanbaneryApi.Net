@@ -22,8 +22,14 @@ namespace KanbaneryApi.Net.Models
         [JsonProperty(PropertyName = "last_name")]
         public string LastName { get; set; }
 
-        [JsonProperty(PropertyName = "gravatar_url")]
-        public string GravatarUrl { get; set; }
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "avatar_url")]
+        public string AvatarUrl { get; set; }
+
+        [JsonProperty(PropertyName = "last_login_at")]
+        public DateTime LastLoginAt { get; set; }
 
         [JsonProperty(PropertyName = "created_at")]
         public DateTime CreatedAt { get; set; }

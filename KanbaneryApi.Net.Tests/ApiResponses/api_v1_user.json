@@ -1,0 +1,13 @@
+﻿{
+  "id": 123456,
+  "created_at": "2014-05-27T08:16:29+00:00",
+  "updated_at": "2018-06-21T17:23:05+00:00",
+  "email": "dave@example.com",
+  "first_name": "Dave",
+  "last_name": "Example",
+  "api_token": "abcdefghijklmnopqrstuvwxyz1234567890",
+  "last_login_at": "2018-06-21T17:22:40+00:00",
+  "name": "Dave Example",
+  "avatar_url": "https://gravatar.com/my_gravatar.png",
+  "type": "User"
+}

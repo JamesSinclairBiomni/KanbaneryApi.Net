@@ -19,7 +19,7 @@ namespace KanbaneryApi.Net.Tests
             messageHandlerFake = new MessageHandlerFake();
             httpClient = new HttpClient(messageHandlerFake);
             httpClient.BaseAddress = new Uri(MessageHandlerFake.Host);
-            kanbaneryApiClient = new KanbaneryApiClient(httpClient);
+            kanbaneryApiClient = new KanbaneryApiClient(httpClient, "workspace", "api-token");
         }
 
         [OneTimeTearDown]
